@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITLIVE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, blue, red, white);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: rgba(51, 51, 51, 0.8); /* O'rtacha shaffoflik */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .logo-container {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .logo {
+            max-width: 100px;
+            height: auto;
+        }
+
+        .welcome-message {
+            position: absolute;
+            top: 140px; /* Logotipdan pastroqqa joylashtirish */
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-size: 24px; /* Kattalashtirilgan harflar */
+            font-weight: bold;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8); /* O'rtacha shaffoflik */
+            margin: 20px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        section {
+            flex: 1;
+            margin: 0 10px;
+        }
+
+        section h2 {
+            color: blue;
+        }
+
+        section p, section ul, section form {
+            color: red;
+        }
+
+        footer {
+            background-color: rgba(51, 51, 51, 0.8); /* O'rtacha shaffoflik */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="welcome-message">
+            <p>Xush kelibsiz ITLIVE platformasiga</p>
+            <p>Eng yaxshi IT kurslarni o'rganing va o'z bilimlaringizni oshiring.</p>
+        </div>
+        <h1>ITLIVE</h1>
+        <nav>
+            <ul>
+                <li><a href="https://itlive.uz">Bosh sahifa</a></li>
+                <li><a href="file:///D:/vsc/vsc1/registratsiya.html">Ro'yxatdan o'tish</a></li>
+                <li><a href="file:///D:/vsc/vsc1/courses.html">Kurslar</a></li>
+                <li><a href="file:///D:/vsc/vsc1/about.html">Biz haqimizda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   
+    <footer>
+        <p>&copy; 2024 ITLIVE. Barcha huquqlar himoyalangan.</p>
+    </footer>
+</body>
+</html>
+
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to bottom right, blue, red, white);
+        height: 100vh;
+    }
+
+    header {
+        background-color: rgba(51, 51, 51, 0.8); /* O'rtacha shaffoflik */
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    header h1 {
+        margin: 0;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0 10px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    main {
+        padding: 20px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.8); /* O'rtacha shaffoflik */
+        margin: 20px;
+        border-radius: 10px;
+    }
+
+    footer {
+        background-color: rgba(51, 51, 51, 0.8); /* O'rtacha shaffoflik */
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+</style>
+<script>
+    function loadPage(page) {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', page + '.html', true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                document.getElementById('content').innerHTML = xhr.responseText;
+            }
+        };
+        xhr.send();
+    }
+</script>
+</head>
+<body onload="loadPage('home')">
+    <!-- Kontent bu yerga yuklanadi -->
+</main>
+
+<footer>
+    <p>&copy; 2024 ITLIVE. Barcha huquqlar himoyalangan.</p>
+</footer>
+</body>
+</html>
